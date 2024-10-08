@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1927 multiespacio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,25 @@
                 <img src="../img/logo-header.png" alt="logo del bar">
             </div>
         </section>
+        <section class="contenedor-menu-hamburgesa">
+            <nav class="navbar navbar-expand-lg text-white " data-bs-theme="dark">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-white" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carta.html">Carta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    </ul>                    
+                </div>
+                </div>
+            </nav>
+        </section> 
         <section class="barra-navegacion">
             <div class="cont-barra-navegacion">
                 <nav>
@@ -32,20 +52,24 @@
         </section>
     </header>
     <main>
-        <section class="img-representativa">
-            <img src="" alt="imagen del Bar">
-        </section>
-        <section class="sobre-nosotros">
-            <h1>Sobre Nosotros</h1>
-            <p class="descripcion">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias obcaecati magnam minima optio dolorum et, natus fugit odit a temporibus. Nesciunt expedita quis obcaecati harum magnam, dolores corporis deserunt eaque!
-            </p>
-            <div>
-                <h2>Valoraciones</h2>
-                <div class="opinion-google">
-                    <a href=""></a>
+        <section class="cont-sobreNosotros">
+            <section class="img-representativa">
+                <img src="../img/img-sobreNosotros.jpg" alt="imagen del Bar">
+            </section>
+            <section class="sobre-nosotros">
+                <h1>Sobre Nosotros</h1>
+                <p class="descripcion">
+                    Bienvenidos a 1927, un bar donde la música en vivo y la buena compañía se encuentran en un ambiente único. Nos especializamos en la organización de eventos con bandas y shows, convirtiendo cada noche en una experiencia memorable para los amantes de la música y el entretenimiento. Nuestra carta destaca por una amplia variedad de tragos que van desde clásicos hasta creaciones exclusivas de la casa, junto con nuestra cerveza tirada, servida en pintas o en jarras de 1.5 litros, ideal para disfrutar entre amigos.
+                    <br>
+                    Pero 1927 no es solo música y tragos, también contamos con una gastronomía que sorprende por su calidad y sabor, perfecta para acompañar cada momento. Ya sea que vengas a disfrutar de un buen show o simplemente a pasar un buen rato, en 1927 siempre encontrarás un lugar donde lo mejor del entretenimiento y la hospitalidad se fusionan para ofrecerte una experiencia inolvidable. ¡Te esperamos!
+                </p>
+                <div>
+                    <h2>Valoraciones</h2>
+                    <div class="opinion-google">
+                        <a href=""></a>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
         <section class="linea-divisora">
             <hr>
@@ -96,5 +120,7 @@
             </section>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

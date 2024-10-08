@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1927 multiespacio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,25 @@
                 <img src="../img/logo-header.png" alt="logo del bar">
             </div>
         </section>
+        <section class="contenedor-menu-hamburgesa">
+            <nav class="navbar navbar-expand-lg text-white " data-bs-theme="dark">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-white" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carta.html">Carta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    </ul>                    
+                </div>
+                </div>
+            </nav>
+        </section> 
         <section class="barra-navegacion">
             <div class="cont-barra-navegacion">
                 <nav>
@@ -33,41 +53,47 @@
     </header>
     <main>
         <!--Contiene los proximos eventos, del mas cercano al mas lejano-->
-        <section class="cont-eventos">
-            <!--Contiene un evento-->
-            <section class="evento">
-                <!--Tarjeta de evento-->
+        <section class="cont-eventos">            
+            <section class="evento">                
                 <div class="tarjeta-evento">
-                    <img src="" alt="" class="img-evento">
-                    <h2 class="titulo-evento"></h2>
-                    <p class="descripcion-evento"></p>
-                    <p class="fecha-evento"></p>
+                    <img class="img-evento" src="../img/index/index-eventos/Evento1.jpg" alt="img de evento">
+                        <div class="cont-detalles-evento">
+                        <h2 class="titulo-evento">Linkin Park</h2>
+                        <p class="descripcion-evento">Lincoln recrea fielmente la energía y estilo del icónico grupo de rock alternativo  Sus presentaciones ofrecen una experiencia nostálgica, combinando la intensidad vocal y musical que los fanáticos recuerdan, brindando un homenaje memorable al legado de la banda original.</p>
+                        <p class="fecha-evento"> 07/12/24</p>
+                    </div>
                 </div>
-            </section>
-            <!--Contiene un evento-->
-            <section class="evento">
-                <!--Tarjeta de evento-->
+            </section>            
+            <section class="evento">                
                 <div class="tarjeta-evento">
-                    <img src="" alt="" class="img-evento">
-                    <h2 class="titulo-evento"></h2>
-                    <p class="descripcion-evento"></p>
-                    <p class="fecha-evento"></p>
+                    <img class="img-evento" src="../img/index/index-eventos/Evento2.jpg" alt="img de evento">
+                        <div class="cont-detalles-evento">
+                        <h2 class="titulo-vento">CTM</h2>
+                        <p class="descripcion-evento">CTM (Claudio Tano Marcelo) recrea fielmente la energía y potencia del rock, entregando en cada presentación una experiencia intensa y auténtica.</p>
+                        <p class="fecha-evento"> 12/12/24</p>
+                    </div>
                 </div>
-            </section>
-            <!--Contiene un evento-->
-            <section class="evento">
-                <!--Tarjeta de evento-->
+            </section>            
+            <section class="evento">                
                 <div class="tarjeta-evento">
-                    <img src="" alt="" class="img-evento">
-                    <h2 class="titulo-evento"></h2>
-                    <p class="descripcion-evento"></p>
-                    <p class="fecha-evento"></p>
+                    <img class="img-evento" src="../img/index/index-eventos/Evento3.jpg" alt="img de evento">
+                        <div class="cont-detalles-evento">
+                        <h2 class="titulo-vento">Andres Calamaro</h2>
+                        <p class="descripcion-evento">Andrés Calamaro recrea fielmente la energía y estilo del rock argentino, fusionando letras profundas con melodías inolvidables. Su música captura la esencia del país, convirtiéndolo en una leyenda viva del rock en español.</p>
+                        <p class="fecha-evento"> 18/12/24</p>
+                    </div>
                 </div>
-            </section>
-            <!--Descrub el resto de los eventos-->
-            <section>
-                <h2 class="link-carga-eventos"><a href="">Mas Eventos</a></h2>
-            </section>
+            </section> 
+            <section class="evento"></section>                
+                <div class="tarjeta-evento">
+                    <img class="img-evento" src="../img/index/index-eventos/Evento4.jpg" alt="img de evento">
+                        <div class="cont-detalles-evento">
+                        <h2 class="titulo-vento">Iván Noble</h2>
+                        <p class="descripcion-evento">Iván Noble recrea fielmente la esencia del rock argentino con su estilo único, combinando letras íntimas y poéticas con una presencia escénica cautivadora. Su música conecta profundamente con el público, consolidándolo como una figura clave en la escena del rock en español.</p>
+                        <p class="fecha-evento"> 18/12/24</p>
+                    </div>
+                </div>
+            </section>         
         </section>
         <section class="linea-divisora">
             <hr>
@@ -118,5 +144,6 @@
             </section>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

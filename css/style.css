@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif !important;
     color: #FFF;
     background-color: #000;
 }
@@ -19,6 +19,28 @@ body {
 
 .logo-1927 .cont-logo {
     padding: 20px;
+}
+
+/*Menu hambuegesa*/
+
+.contenedor-menu-hamburgesa {
+    background-color: #000;
+    display: none;
+}
+
+
+.contenedor-menu-hamburgesa nav div ul :hover{
+    color: #FCA311 !important; 
+}
+
+.nav-link {
+    color: #ffffff !important;
+    opacity: 1;
+}
+
+.contenedor-menu-hamburgesa nav div ul .nav-link.active {
+    color: #FCA311 !important;
+    font-weight: bold !important;
 }
 
 /* Barra de navegacion*/
@@ -35,7 +57,7 @@ body {
     font-size: 1.1em;
     font-weight: bold;    
     width: 100%;
-    max-width: 1500px;    
+    max-width: 1300px;    
 }
 
 .barra-navegacion nav ul{
@@ -72,7 +94,7 @@ body {
     border-radius: 15px;
     overflow: hidden;
     margin: 10px;
-    width: clamp(200px, 100%, 1500px);
+    width: clamp(300px, 100%, 1300px);
     aspect-ratio: 4/2;
     max-height: 600px;
 }
@@ -91,7 +113,7 @@ body {
 
 .eventos-principales-h2 {
     border-top: 1px solid #FCA311;
-    width: clamp(300px, 100%, 1500px);
+    width: clamp(300px, 100%, 1300px);
     text-align: center;
     padding-top: 15px;
 }
@@ -101,7 +123,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 10px;
-    width: clamp(300px, 100%, 1500px);
+    width: clamp(300px, 100%, 1300px);
 }
 
 .contenedor-eventos .card img { 
@@ -112,6 +134,8 @@ body {
     background-color: #000;
     border: 1px solid #E5E5E5; 
     color: #FFF;
+    height: 450px !important;
+    overflow: hidden;
 }
 
 .contenedor-eventos .card .card-title {
@@ -136,7 +160,7 @@ body {
 }
 
 .linea-divisora hr {
-    width: clamp(300px, 100%, 1500px);
+    width: clamp(300px, 100%, 1300px);
 }
 
 
@@ -154,13 +178,13 @@ body {
     display: flex;
     flex-flow: column wrap;
     gap: 10px;
-    width: clamp(300px, 100%, 1500px);
+    width: clamp(300px, 100%, 1300px);
     text-align: center;
 }
 
 .menu .galeria-menu-linea{
     margin-top: 20px;
-    width: clamp(300px, 100%, 1500px);
+    width: clamp(300px, 100%, 1300px);
 }
 
 .menu .galeria-menu h2 {
@@ -210,11 +234,72 @@ body {
     color: inherit;
 }
 
+                                            /***  SECCION DE CARTA   ***/
+
+.productos-ofrecidos {    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.productos-ofrecidos p {
+    margin-bottom: 0;
+}
+
+.productos-ofrecidos .tipo-producto {
+    margin-top: 30px;
+    color: #FCA311;
+}
+
+.productos-ofrecidos .productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 10px;
+    width: clamp(300px, 100%, 1300px); 
+} 
+
+.productos-ofrecidos .productos .tarj-producto {  
+    background-image: url(../img/carta/fondo-tarjeta.avif);  
+    -webkit-box-shadow: 0px -2px 4px 5px rgba(77,77,77,1);
+    -moz-box-shadow: 0px -2px 4px 5px rgba(77,77,77,1);
+    box-shadow: 0px -2px 4px 5px rgba(77,77,77,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 5px;
+    margin: 10px;
+    width: clamp(300px, 50%, 420px);
+}
+
+.productos-ofrecidos .productos .tarj-producto .titulo-producto {
+    border-bottom: #000 solid 2px;
+    color: #000;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 5px 5px 5px 10px; 
+}
+
+.productos-ofrecidos .productos .tarj-producto .descripcion-producto {
+    color: #000;
+    padding: 5px 5px 5px 15px;
+}
+
+.productos-ofrecidos .productos .tarj-producto .precio-producto {
+    align-self: flex-end;    
+    color: #FCA311;
+    font-weight: bold;
+    padding: 5px 15px 5px 5px;
+}
+
                                             /***  SECCION DE  FOOTER   ***/
 
 footer {    
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .cont-footer {
@@ -226,13 +311,13 @@ footer {
     grid-template-areas: 
     "contacto horarios mapa"
     "redes redes ."; 
-    width: clamp(300px, 100%, 1500px); 
+    width: clamp(300px, 100%, 1300px); 
 }
 
 .cont-footer section {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     min-width: 230px;    
 }
 
@@ -240,6 +325,9 @@ footer {
     color: #FCA311;
 }
 
+.cont-footer section p {
+    margin: 0;
+}
 .contacto {
     grid-area: contacto;
 }
@@ -256,6 +344,17 @@ footer {
 }
 .redes-sociales {
     grid-area: redes;
+    align-items: center;
 }
 
 
+@media screen and (max-width: 620px) {
+    .contenedor-menu-hamburgesa {
+        display: inline;
+        
+    }
+    .barra-navegacion {
+        display: none;
+    }
+    
+}
