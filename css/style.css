@@ -8,6 +8,7 @@ body {
     font-family: "Open Sans", sans-serif !important;
     color: #FFF;
     background-color: #000;
+    min-width: 350px;
 }
 
 /*** HEADER ***/
