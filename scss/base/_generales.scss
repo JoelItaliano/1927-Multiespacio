@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-principal;
+    color: $color-secundario;
+    font-family: "Open Sans", sans-serif !important;    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit; 
+}

@@ -19,9 +19,5 @@ Javascript, HTML, CSS, SASS
 | Example Color | ![#E5E5E5](https://coolors.co/e5e5e5) #0E5E5E5 |
 
 
-## Tech Stack
-
-**Client:** HTML, CSS, Bootstrap, SASS
-
 
 

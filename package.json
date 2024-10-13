@@ -1,0 +1,18 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "1927 es un Bar de la ciudad en donde me encuentro, el objetivo de este proyecto es poder mostrar lo que represta este lugar para llegar a mas usuarios y asi poder atraer a mas clientes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.7"
+  }
+}

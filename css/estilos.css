@@ -1,0 +1,60 @@
+/* Funcionalidades */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #000;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif !important; }
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit; }
+
+header .logo-1927 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  header .logo-1927 div {
+    padding: 20px; }
+
+header .contenedor-menu-hamburgesa {
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  display: none; }
+  header .contenedor-menu-hamburgesa nav div div ul .nav-link {
+    color: #ffffff;
+    opacity: 1; }
+    header .contenedor-menu-hamburgesa nav div div ul .nav-link:hover {
+      color: #FCA311 !important; }
+
+header .barra-navegacion {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0; }
+  header .barra-navegacion div {
+    border-top: 1.5px solid #FCA311;
+    border-bottom: 1.5px solid #FCA311;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    max-width: 1300px; }
+    header .barra-navegacion div nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0;
+      padding: 5px; }
+      header .barra-navegacion div nav ul li {
+        padding: 12.5px; }
+        header .barra-navegacion div nav ul li a:hover {
+          color: #FCA311; }
+
+.contenedor-menu-hamburgesa nav div div ul .nav-link .active {
+  color: #FCA311 !important;
+  font-weight: bold !important; }
