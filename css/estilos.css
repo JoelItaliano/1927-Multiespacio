@@ -7,11 +7,19 @@
 body {
   background-color: #000;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif !important; }
+  font-family: "Open Sans", sans-serif !important;
+  min-width: 350px; }
 
 nav ul li a {
   text-decoration: none;
   color: inherit; }
+
+.linea-divisora {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0; }
+  .linea-divisora hr {
+    width: clamp(300px, 100%, 1300px); }
 
 header .logo-1927 {
   display: flex;
@@ -58,3 +66,320 @@ header .barra-navegacion {
 .contenedor-menu-hamburgesa nav div div ul .nav-link .active {
   color: #FCA311 !important;
   font-weight: bold !important; }
+
+.home {
+  display: flex;
+  justify-content: center; }
+  .home .imagenes-representativas {
+    border: 2px solid #E5E5E5;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+    width: clamp(350px, 100%, 1300px);
+    aspect-ratio: 4/2;
+    max-height: 600px; }
+
+.eventos-principales {
+  font-family: "Fredoka", sans-serif;
+  margin: 40px 10px 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; }
+  .eventos-principales .eventos-principales-h2 {
+    border-top: 1px solid #FCA311;
+    width: clamp(300px, 100%, 1300px);
+    text-align: center;
+    padding-top: 15px; }
+  .eventos-principales section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
+    width: clamp(300px, 100%, 1300px); }
+    .eventos-principales section .card {
+      background-color: #000;
+      border: 1px solid #E5E5E5;
+      color: #ffffff;
+      height: 450px !important;
+      overflow: hidden; }
+      .eventos-principales section .card img {
+        height: 100%; }
+      .eventos-principales section .card div h5 {
+        color: #FCA311; }
+      .eventos-principales section .card div .link-eventos {
+        color: #FCA311;
+        align-self: self-start; }
+        .eventos-principales section .card div .link-eventos a {
+          text-decoration: none;
+          color: inherit;
+          margin-left: 10px; }
+
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  align-items: center;
+  margin: 50px 0; }
+  .menu .galeria-menu {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    width: clamp(300px, 100%, 1300px);
+    text-align: center; }
+    .menu .galeria-menu h2 {
+      color: #FCA311; }
+    .menu .galeria-menu section {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 10px;
+      justify-content: space-evenly; }
+      .menu .galeria-menu section div {
+        border: 0.5px solid #E5E5E5;
+        display: flex;
+        flex-flow: column wrap;
+        font-family: "Fredoka", sans-serif;
+        padding-bottom: 5px;
+        width: 300px;
+        height: 400px; }
+        .menu .galeria-menu section div img {
+          width: 100%;
+          height: 200px;
+          background-color: #000; }
+        .menu .galeria-menu section div h3 {
+          color: #FCA311;
+          margin-top: 20px; }
+        .menu .galeria-menu section div p {
+          margin-left: 10px;
+          margin-right: 10px; }
+    .menu .galeria-menu .linea-divisora {
+      margin-top: 20px; }
+
+.link-carta .cont-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .link-carta .cont-link p a {
+    color: inherit; }
+
+.carta .productos-ofrecidos {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+  .carta .productos-ofrecidos p {
+    margin: 0; }
+  .carta .productos-ofrecidos h2 {
+    margin-top: 30px;
+    color: #FCA311; }
+  .carta .productos-ofrecidos section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 10px;
+    width: clamp(300px, 100%, 1300px); }
+    .carta .productos-ofrecidos section div {
+      background-image: url(../img/carta/fondo-tarjeta.avif);
+      -webkit-box-shadow: 0px -2px 4px 5px #4d4d4d;
+      -moz-box-shadow: 0px -2px 4px 5px #4d4d4d;
+      box-shadow: 0px -2px 4px 5px #4d4d4d;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 5px;
+      margin: 10px;
+      width: clamp(300px, 50%, 420px); }
+      .carta .productos-ofrecidos section div h3 {
+        border-bottom: #000 solid 2px;
+        font-size: x-large;
+        font-weight: 700;
+        padding: 5px 5px 5px 10px; }
+      .carta .productos-ofrecidos section div .descripcion-producto {
+        padding: 5px 5px 5px 15px; }
+      .carta .productos-ofrecidos section div .precio-producto {
+        align-self: flex-end;
+        color: #FCA311;
+        font-weight: bold;
+        padding: 5px 15px 5px 5px; }
+
+.eventos {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  margin: 10px; }
+  .eventos .cont-eventos {
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    width: clamp(300px, 100%, 1300px); }
+    .eventos .cont-eventos .evento {
+      margin: 15px 10px; }
+      .eventos .cont-eventos .evento .tarjeta-evento {
+        background: url(../img/eventos/fondo-tarjeta.jpg);
+        --webkit-box-shadow: 0px 0px 5px 2px rgba(255,255,255,1);
+        -moz-box-shadow: 0px 0px 5px 2px white;
+        box-shadow: 0px 0px 5px 2px white;
+        display: flex;
+        flex-flow: row;
+        gap: 15px; }
+        .eventos .cont-eventos .evento .tarjeta-evento .cont-img {
+          min-width: 300px;
+          max-width: 300px;
+          height: 250px; }
+          .eventos .cont-eventos .evento .tarjeta-evento .cont-img img {
+            width: 100%;
+            height: 100%; }
+        .eventos .cont-eventos .evento .tarjeta-evento .cont-detalles-evento {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: justify;
+          justify-content: space-between; }
+          .eventos .cont-eventos .evento .tarjeta-evento .cont-detalles-evento div {
+            border-bottom: 1px solid #E5E5E5;
+            text-align: center;
+            width: 100%; }
+            .eventos .cont-eventos .evento .tarjeta-evento .cont-detalles-evento div h2 {
+              color: #FCA311;
+              font-weight: 600;
+              margin: 10px; }
+          .eventos .cont-eventos .evento .tarjeta-evento .cont-detalles-evento .descripcion-evento {
+            padding: 10px; }
+          .eventos .cont-eventos .evento .tarjeta-evento .cont-detalles-evento .fecha-evento {
+            color: #FCA311;
+            font-size: 1.5rem;
+            font-weight: 600; }
+
+.galeria {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  margin: 10px; }
+  .galeria .contenedor-galeria {
+    display: flex;
+    flex-flow: column;
+    margin: 20px 10px;
+    width: clamp(300px, 100%, 1300px); }
+    .galeria .contenedor-galeria h2 {
+      text-align: center;
+      color: #FCA311; }
+    .galeria .contenedor-galeria section {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: 15px; }
+      .galeria .contenedor-galeria section div {
+        border: 1px solid #E5E5E5;
+        width: 250px;
+        height: 200px; }
+        .galeria .contenedor-galeria section div img {
+          width: 100%;
+          height: 100%; }
+
+.sobre-nosotros {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 20px 10px; }
+  .sobre-nosotros .cont-sobreNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: clamp(300px, 100%, 1300px);
+    gap: 15px; }
+    .sobre-nosotros .cont-sobreNosotros .img-representativa {
+      border: 1px solid #E5E5E5;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      width: clamp(300px, 50%, 500px); }
+      .sobre-nosotros .cont-sobreNosotros .img-representativa img {
+        width: 100%;
+        height: 100%; }
+    .sobre-nosotros .cont-sobreNosotros .cont-descripcion-sobre-nosotros {
+      width: clamp(300px, 50%, 600px);
+      text-align: justify; }
+      .sobre-nosotros .cont-sobreNosotros .cont-descripcion-sobre-nosotros h2 {
+        color: #FCA311; }
+
+footer {
+  display: flex;
+  justify-content: center; }
+  footer .cont-footer {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    grid-template-rows: 220px 220px;
+    gap: 10px 10px;
+    grid-template-areas: "contacto horarios mapa" "redes redes .";
+    justify-content: center;
+    margin: 15px;
+    width: clamp(300px, 100%, 1300px); }
+    footer .cont-footer section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 230px; }
+      footer .cont-footer section h2 {
+        color: #FCA311; }
+      footer .cont-footer section div p {
+        margin: 0; }
+    footer .cont-footer .contacto {
+      grid-area: contacto; }
+    footer .cont-footer .horarios {
+      grid-area: horarios; }
+    footer .cont-footer .ubicacion {
+      grid-area: mapa; }
+      footer .cont-footer .ubicacion .mapa {
+        width: 100%; }
+    footer .cont-footer .redes-sociales {
+      grid-area: redes;
+      align-items: center; }
+
+@media screen and (max-width: 750px) {
+  footer .cont-footer {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 220px 220px 220px;
+    gap: 10px 10px;
+    grid-template-areas: "contacto horarios" "mapa mapa" "redes redes"; }
+    footer .cont-footer .contacto {
+      grid-area: contacto; }
+    footer .cont-footer .horarios {
+      grid-area: horarios; }
+    footer .cont-footer .ubicacion {
+      grid-area: mapa; }
+    footer .cont-footer .redes-sociales {
+      grid-area: redes; } }
+
+@media screen and (max-width: 620px) {
+  header .contenedor-menu-hamburgesa {
+    display: inline; }
+  header .barra-navegacion {
+    display: none; }
+  .home .imagenes-representativas {
+    aspect-ratio: 4/3; }
+  .eventos .cont-eventos {
+    align-items: center; }
+    .eventos .cont-eventos .evento .tarjeta-evento {
+      flex-wrap: wrap;
+      width: 300px; } }
+
+@media screen and (max-width: 520px) {
+  footer .cont-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 220px 220px 220px;
+    gap: 10px 10px;
+    grid-template-areas: "contacto " "horarios" "mapa" "redes";
+    justify-items: center; }
+    footer .cont-footer .contacto {
+      grid-area: contacto; }
+    footer .cont-footer .horarios {
+      grid-area: horarios; }
+    footer .cont-footer .ubicacion {
+      grid-area: mapa; }
+    footer .cont-footer .redes-sociales {
+      grid-area: redes; } }

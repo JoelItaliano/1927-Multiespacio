@@ -1,0 +1,32 @@
+.sobre-nosotros {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px 10px;
+    .cont-sobreNosotros {
+        display: flex;    
+        flex-wrap: wrap;
+        justify-content: center;
+        width: clamp(300px, 100%, 1300px);
+        gap: 15px;
+        .img-representativa {
+            border: 1px solid $color-cuaternario ;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            width: clamp(300px, 50%, 500px);
+            img {
+                width: 100%;   
+                height: 100%;
+            }
+        }
+        .cont-descripcion-sobre-nosotros {
+            width: clamp(300px, 50%, 600px);
+            text-align: justify;
+            h2 {
+                color: $color-terciario
+            }
+        }
+    }
+}

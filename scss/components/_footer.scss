@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    justify-content: center;
+    .cont-footer {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 0.5fr 0.5fr 1fr; 
+        grid-template-rows: 220px 220px; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+        "contacto horarios mapa"
+        "redes redes ."; 
+        justify-content: center;
+        margin: 15px;
+        width: clamp(300px, 100%, 1300px);
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-width: 230px;
+            h2 {
+                color: $color-terciario;
+            }
+            div {
+                p {
+                    margin: 0;
+                }
+            }            
+        }
+        .contacto {
+            grid-area: contacto;
+        }
+        .horarios {
+            grid-area: horarios;
+        }
+        .ubicacion {
+            grid-area: mapa;
+            .mapa {
+                width: 100%;
+            }
+        }
+        .redes-sociales {
+            grid-area: redes;
+            align-items: center;
+        }
+    }
+}

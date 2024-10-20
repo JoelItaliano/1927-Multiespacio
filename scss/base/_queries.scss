@@ -1,0 +1,84 @@
+@media screen and (max-width: 750px) {
+    footer {
+        .cont-footer {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr; 
+            grid-template-rows: 220px 220px 220px; 
+            gap: 10px 10px; 
+            grid-template-areas: 
+            "contacto horarios"
+            "mapa mapa"
+            "redes redes"; 
+            .contacto {
+                grid-area: contacto;
+            }
+            .horarios {
+                grid-area: horarios;
+            }
+            .ubicacion {
+                grid-area: mapa; 
+            }
+            .redes-sociales {
+                grid-area: redes;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    header {
+        .contenedor-menu-hamburgesa {
+            display: inline;
+        }
+        .barra-navegacion {
+            display: none;
+        }
+    }
+
+    .home {
+        .imagenes-representativas {
+            aspect-ratio: 4/3;
+        }
+    }
+
+    .eventos {
+        .cont-eventos {
+            align-items: center;
+            .evento {
+                .tarjeta-evento {
+                    flex-wrap: wrap;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    footer {
+        .cont-footer {
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 220px 220px 220px 220px; 
+            gap: 10px 10px; 
+            grid-template-areas: 
+            "contacto "
+            "horarios"
+            "mapa"
+            "redes"; 
+            justify-items: center;
+            .contacto {
+                grid-area: contacto;
+            }
+            .horarios {
+                grid-area: horarios;
+            }
+            .ubicacion {
+                grid-area: mapa; 
+            }
+            .redes-sociales {
+                grid-area: redes;
+            }
+        }
+    }
+}

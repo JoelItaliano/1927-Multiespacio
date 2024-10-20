@@ -1,0 +1,60 @@
+.home {
+    display: flex;
+    justify-content: center;
+    .imagenes-representativas {
+        border: 2px solid $color-cuaternario;   
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 10px;
+        width: clamp(350px, 100%, 1300px);
+        aspect-ratio: 4/2;
+        max-height: 600px;
+        
+    }
+}
+
+.eventos-principales {
+    font-family: "Fredoka", sans-serif;
+    margin: 40px 10px 15px 10px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    .eventos-principales-h2 {
+        border-top: 1px solid $color-terciario;
+        width: clamp(300px, 100%, 1300px);
+        text-align: center;
+        padding-top: 15px;
+    }
+    section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 10px;
+        width: clamp(300px, 100%, 1300px);
+        .card {
+            background-color: $color-principal;
+            border: 1px solid $color-cuaternario; 
+            color: $color-secundario;
+            height: 450px !important;
+            overflow: hidden;
+            img {
+                height: 100%;
+            }
+            div {
+                h5{
+                    color: $color-terciario;
+                }
+                .link-eventos {
+                    color: $color-terciario;
+                    align-self: self-start;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

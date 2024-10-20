@@ -7,10 +7,20 @@
 body {
     background-color: $color-principal;
     color: $color-secundario;
-    font-family: "Open Sans", sans-serif !important;    
+    font-family: "Open Sans", sans-serif !important;
+    min-width: 350px;    
 }
 
 nav ul li a {
     text-decoration: none;
     color: inherit; 
+}
+
+.linea-divisora{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    hr {
+        width: clamp(300px, 100%, 1300px);
+    }
 }
