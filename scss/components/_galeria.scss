@@ -7,7 +7,7 @@
         display: flex;
         flex-flow: column ;
         margin: 20px 10px;
-        width: clamp(300px, 100%, 1300px);
+        @extend %widith-clamp;
         h2 {
             text-align: center;
             color: $color-terciario;

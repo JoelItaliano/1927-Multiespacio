@@ -4,3 +4,10 @@ $color-principal: #000;
 $color-secundario: #ffffff;
 $color-terciario: #FCA311;
 $color-cuaternario : #E5E5E5;
+
+/*Extends*/
+
+%widith-clamp {
+    width: clamp(300px, 100%, 1300px)
+} 
+

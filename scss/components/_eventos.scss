@@ -7,7 +7,7 @@
         display: flex;
         flex-flow: column ;
         margin: 10px;
-        width: clamp(300px, 100%, 1300px);
+        @extend %widith-clamp;
         .evento {
             margin: 15px 10px;
             .tarjeta-evento {

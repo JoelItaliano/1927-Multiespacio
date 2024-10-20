@@ -7,7 +7,7 @@
         display: flex;    
         flex-wrap: wrap;
         justify-content: center;
-        width: clamp(300px, 100%, 1300px);
+        @extend %widith-clamp;
         gap: 15px;
         .img-representativa {
             border: 1px solid $color-cuaternario ;

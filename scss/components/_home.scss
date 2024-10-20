@@ -6,7 +6,7 @@
         border-radius: 15px;
         overflow: hidden;
         margin: 10px;
-        width: clamp(350px, 100%, 1300px);
+        @extend %widith-clamp;
         aspect-ratio: 4/2;
         max-height: 600px;
         
@@ -22,7 +22,7 @@
     gap: 15px;
     .eventos-principales-h2 {
         border-top: 1px solid $color-terciario;
-        width: clamp(300px, 100%, 1300px);
+        @extend %widith-clamp;
         text-align: center;
         padding-top: 15px;
     }
@@ -31,7 +31,7 @@
         flex-flow: row wrap;
         justify-content: space-around;
         gap: 10px;
-        width: clamp(300px, 100%, 1300px);
+        @extend %widith-clamp;
         .card {
             background-color: $color-principal;
             border: 1px solid $color-cuaternario; 

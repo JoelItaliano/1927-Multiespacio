@@ -1,4 +1,8 @@
 /* Funcionalidades */
+/*Extends*/
+.home .imagenes-representativas, .eventos-principales .eventos-principales-h2, .eventos-principales section, .menu .galeria-menu, .carta .productos-ofrecidos section, .eventos .cont-eventos, .galeria .contenedor-galeria, .sobre-nosotros .cont-sobreNosotros, footer .cont-footer {
+  width: clamp(300px, 100%, 1300px); }
+
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +79,6 @@ header .barra-navegacion {
     border-radius: 15px;
     overflow: hidden;
     margin: 10px;
-    width: clamp(350px, 100%, 1300px);
     aspect-ratio: 4/2;
     max-height: 600px; }
 
@@ -88,15 +91,13 @@ header .barra-navegacion {
   gap: 15px; }
   .eventos-principales .eventos-principales-h2 {
     border-top: 1px solid #FCA311;
-    width: clamp(300px, 100%, 1300px);
     text-align: center;
     padding-top: 15px; }
   .eventos-principales section {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    gap: 10px;
-    width: clamp(300px, 100%, 1300px); }
+    gap: 10px; }
     .eventos-principales section .card {
       background-color: #000;
       border: 1px solid #E5E5E5;
@@ -125,7 +126,6 @@ header .barra-navegacion {
     display: flex;
     flex-flow: column wrap;
     gap: 10px;
-    width: clamp(300px, 100%, 1300px);
     text-align: center; }
     .menu .galeria-menu h2 {
       color: #FCA311; }
@@ -176,8 +176,7 @@ header .barra-navegacion {
     flex-flow: row wrap;
     justify-content: center;
     gap: 25px;
-    margin: 10px;
-    width: clamp(300px, 100%, 1300px); }
+    margin: 10px; }
     .carta .productos-ofrecidos section div {
       background-image: url(../img/carta/fondo-tarjeta.avif);
       -webkit-box-shadow: 0px -2px 4px 5px #4d4d4d;
@@ -211,8 +210,7 @@ header .barra-navegacion {
   .eventos .cont-eventos {
     display: flex;
     flex-flow: column;
-    margin: 10px;
-    width: clamp(300px, 100%, 1300px); }
+    margin: 10px; }
     .eventos .cont-eventos .evento {
       margin: 15px 10px; }
       .eventos .cont-eventos .evento .tarjeta-evento {
@@ -259,8 +257,7 @@ header .barra-navegacion {
   .galeria .contenedor-galeria {
     display: flex;
     flex-flow: column;
-    margin: 20px 10px;
-    width: clamp(300px, 100%, 1300px); }
+    margin: 20px 10px; }
     .galeria .contenedor-galeria h2 {
       text-align: center;
       color: #FCA311; }
@@ -286,7 +283,6 @@ header .barra-navegacion {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: clamp(300px, 100%, 1300px);
     gap: 15px; }
     .sobre-nosotros .cont-sobreNosotros .img-representativa {
       border: 1px solid #E5E5E5;
@@ -315,8 +311,7 @@ footer {
     gap: 10px 10px;
     grid-template-areas: "contacto horarios mapa" "redes redes .";
     justify-content: center;
-    margin: 15px;
-    width: clamp(300px, 100%, 1300px); }
+    margin: 15px; }
     footer .cont-footer section {
       display: flex;
       flex-direction: column;
