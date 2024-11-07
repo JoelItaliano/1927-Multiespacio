@@ -1,6 +1,9 @@
 .home {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
     .imagenes-representativas {
         border: 2px solid $color-cuaternario;   
         border-radius: 15px;
@@ -8,53 +11,132 @@
         margin: 10px;
         @extend %widith-clamp;
         aspect-ratio: 4/2;
-        max-height: 600px;
-        
+        max-height: 600px;        
     }
-}
-
-.eventos-principales {
-    font-family: "Fredoka", sans-serif;
-    margin: 40px 10px 15px 10px;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    .eventos-principales-h2 {
-        border-top: 1px solid $color-terciario;
+    .home-eventos {
         @extend %widith-clamp;
-        text-align: center;
-        padding-top: 15px;
-    }
-    section {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        gap: 10px;
-        @extend %widith-clamp;
-        .card {
-            background-color: $color-principal;
-            border: 1px solid $color-cuaternario; 
-            color: $color-secundario;
-            height: 450px !important;
-            overflow: hidden;
-            img {
-                height: 100%;
-            }
-            div {
-                h5{
-                    color: $color-terciario;
+        align-items: center;        
+        margin: 10px;
+        border-top: 1px solid #FCA311;
+        text-align: center;
+        padding-top: 25px;
+        .home-contenedor-eventos {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;                       
+            .img-eventos{
+                width: clamp(350px, 50%, 550px);                
+                img{
+                    width: 100%;
+                    height: 100%;
                 }
-                .link-eventos {
-                    color: $color-terciario;
-                    align-self: self-start;
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                        margin-left: 10px;
+            }
+            .contenedor-descripcion-eventos{
+                display: flex;
+                flex-direction: column;
+                width: clamp(350px, 50%, 550px);
+                gap: 15px;
+                padding: 15px;
+                text-align: justify;
+                .contenedor-titulo-eventos {
+                    border-bottom: solid  1px $color-terciario;
+                }
+                .descripcion-eventos {
+                    font-size: 1.2rem;
+                }
+                .contenedor-link-eventos {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 10px;
+                    
+                }
+            }
+        }      
+    }
+    .home-menu {
+        @extend %widith-clamp;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-top: 1px solid #FCA311;
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 40px;
+
+        .menu-titulo {
+            border-bottom: solid  1px #FCA311;
+            min-width: 340px;
+        }
+        .menu-invitacion {
+            font-size: 1.2rem;
+            margin: 10px;
+        }
+        .menu-carousel {    
+            position: relative;
+            width: 100%;
+            max-width: 1300px;
+            min-width: 350px;
+            height: 200px;
+            overflow: hidden;
+            margin: 0 auto;
+            .carousel-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(255, 255, 255, 0.23);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(8.5px);
+                -webkit-backdrop-filter: blur(8.5px);
+                border: 1px solid rgba(255, 255, 255, 0.97);
+                cursor: pointer;
+                
+                width: 45px;
+                height: 60px;
+                z-index: 1;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .prev-button {
+                padding: 10px 5px;
+                left: 10px;
+            } 
+            .next-button {
+                padding: 10px 0 10px 10px;
+                right: 10px;
+            }           
+            .cont-carousel {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                .carousel-home {
+                    display: flex;
+                    gap: 10px;
+                    transition: transform 0.5s ease;
+                    .carousel-imagen {
+                        min-width: 300px;
+                        height: 200px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover; 
+                        }
                     }
                 }
             }
+            
         }
-    }
+        .menu-link-carta {
+            color: $color-terciario
+        }
+    }  
 }
+

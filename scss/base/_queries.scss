@@ -1,4 +1,22 @@
 @media screen and (max-width: 750px) {
+    .home {
+        .home-eventos {
+            .home-contenedor-eventos {
+                .contenedor-descripcion-eventos {
+                    .contenedor-titulo-eventos {
+                        text-align: center;
+                    }
+                    .contenedor-link-eventos {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
     footer {
         .cont-footer {
             display: grid;

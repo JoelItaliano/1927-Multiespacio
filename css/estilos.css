@@ -1,6 +1,6 @@
 /* Funcionalidades */
 /*Extends*/
-.home .imagenes-representativas, .eventos-principales .eventos-principales-h2, .eventos-principales section, .menu .galeria-menu, .carta .productos-ofrecidos section, .eventos .cont-eventos, .galeria .contenedor-galeria, .sobre-nosotros .cont-sobreNosotros, footer .cont-footer {
+.home .imagenes-representativas, .home .home-eventos, .home .home-menu, .carta .productos-ofrecidos section, .eventos .cont-eventos, .galeria .contenedor-galeria, .sobre-nosotros .cont-sobreNosotros, footer .cont-footer {
   width: clamp(300px, 100%, 1300px); }
 
 * {
@@ -14,7 +14,10 @@ body {
   font-family: "Open Sans", sans-serif !important;
   min-width: 350px; }
 
-nav ul li a {
+p {
+  margin-bottom: 0; }
+
+nav ul li a, a {
   text-decoration: none;
   color: inherit; }
 
@@ -73,7 +76,10 @@ header .barra-navegacion {
 
 .home {
   display: flex;
-  justify-content: center; }
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 10px; }
   .home .imagenes-representativas {
     border: 2px solid #E5E5E5;
     border-radius: 15px;
@@ -81,86 +87,104 @@ header .barra-navegacion {
     margin: 10px;
     aspect-ratio: 4/2;
     max-height: 600px; }
-
-.eventos-principales {
-  font-family: "Fredoka", sans-serif;
-  margin: 40px 10px 15px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px; }
-  .eventos-principales .eventos-principales-h2 {
+  .home .home-eventos {
+    display: flex;
+    align-items: center;
+    margin: 10px;
     border-top: 1px solid #FCA311;
     text-align: center;
-    padding-top: 15px; }
-  .eventos-principales section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 10px; }
-    .eventos-principales section .card {
-      background-color: #000;
-      border: 1px solid #E5E5E5;
-      color: #ffffff;
-      height: 450px !important;
-      overflow: hidden; }
-      .eventos-principales section .card img {
-        height: 100%; }
-      .eventos-principales section .card div h5 {
-        color: #FCA311; }
-      .eventos-principales section .card div .link-eventos {
-        color: #FCA311;
-        align-self: self-start; }
-        .eventos-principales section .card div .link-eventos a {
-          text-decoration: none;
-          color: inherit;
-          margin-left: 10px; }
-
-.menu {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 20px;
-  align-items: center;
-  margin: 50px 0; }
-  .menu .galeria-menu {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-    text-align: center; }
-    .menu .galeria-menu h2 {
-      color: #FCA311; }
-    .menu .galeria-menu section {
+    padding-top: 25px; }
+    .home .home-eventos .home-contenedor-eventos {
       display: flex;
       flex-flow: row wrap;
-      gap: 10px;
-      justify-content: space-evenly; }
-      .menu .galeria-menu section div {
-        border: 0.5px solid #E5E5E5;
-        display: flex;
-        flex-flow: column wrap;
-        font-family: "Fredoka", sans-serif;
-        padding-bottom: 5px;
-        width: 300px;
-        height: 400px; }
-        .menu .galeria-menu section div img {
+      justify-content: space-around;
+      align-items: center;
+      gap: 15px; }
+      .home .home-eventos .home-contenedor-eventos .img-eventos {
+        width: clamp(350px, 50%, 550px); }
+        .home .home-eventos .home-contenedor-eventos .img-eventos img {
           width: 100%;
-          height: 200px;
-          background-color: #000; }
-        .menu .galeria-menu section div h3 {
-          color: #FCA311;
-          margin-top: 20px; }
-        .menu .galeria-menu section div p {
-          margin-left: 10px;
-          margin-right: 10px; }
-    .menu .galeria-menu .linea-divisora {
-      margin-top: 20px; }
-
-.link-carta .cont-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .link-carta .cont-link p a {
-    color: inherit; }
+          height: 100%; }
+      .home .home-eventos .home-contenedor-eventos .contenedor-descripcion-eventos {
+        display: flex;
+        flex-direction: column;
+        width: clamp(350px, 50%, 550px);
+        gap: 15px;
+        padding: 15px;
+        text-align: justify; }
+        .home .home-eventos .home-contenedor-eventos .contenedor-descripcion-eventos .contenedor-titulo-eventos {
+          border-bottom: solid 1px #FCA311; }
+        .home .home-eventos .home-contenedor-eventos .contenedor-descripcion-eventos .descripcion-eventos {
+          font-size: 1.2rem; }
+        .home .home-eventos .home-contenedor-eventos .contenedor-descripcion-eventos .contenedor-link-eventos {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 10px; }
+  .home .home-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #FCA311;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 40px; }
+    .home .home-menu .menu-titulo {
+      border-bottom: solid  1px #FCA311;
+      min-width: 340px; }
+    .home .home-menu .menu-invitacion {
+      font-size: 1.2rem;
+      margin: 10px; }
+    .home .home-menu .menu-carousel {
+      position: relative;
+      width: 100%;
+      max-width: 1300px;
+      min-width: 350px;
+      height: 200px;
+      overflow: hidden;
+      margin: 0 auto; }
+      .home .home-menu .menu-carousel .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.23);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.5px);
+        -webkit-backdrop-filter: blur(8.5px);
+        border: 1px solid rgba(255, 255, 255, 0.97);
+        cursor: pointer;
+        width: 45px;
+        height: 60px;
+        z-index: 1; }
+        .home .home-menu .menu-carousel .carousel-button img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .home .home-menu .menu-carousel .prev-button {
+        padding: 10px 5px;
+        left: 10px; }
+      .home .home-menu .menu-carousel .next-button {
+        padding: 10px 0 10px 10px;
+        right: 10px; }
+      .home .home-menu .menu-carousel .cont-carousel {
+        overflow: hidden;
+        width: 100%;
+        height: 100%; }
+        .home .home-menu .menu-carousel .cont-carousel .carousel-home {
+          display: flex;
+          gap: 10px;
+          transition: transform 0.5s ease; }
+          .home .home-menu .menu-carousel .cont-carousel .carousel-home .carousel-imagen {
+            min-width: 300px;
+            height: 200px; }
+            .home .home-menu .menu-carousel .cont-carousel .carousel-home .carousel-imagen img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+    .home .home-menu .menu-link-carta {
+      color: #FCA311; }
 
 .carta .productos-ofrecidos {
   display: flex;
@@ -334,6 +358,10 @@ footer {
       align-items: center; }
 
 @media screen and (max-width: 750px) {
+  .home .home-eventos .home-contenedor-eventos .contenedor-descripcion-eventos .contenedor-titulo-eventos {
+    text-align: center; }
+  .home .home-eventos .home-contenedor-eventos .contenedor-descripcion-eventos .contenedor-link-eventos {
+    justify-content: center; }
   footer .cont-footer {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
