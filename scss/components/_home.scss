@@ -4,14 +4,61 @@
     flex-direction: column;
     gap: 30px;
     margin: 10px;
-    .imagenes-representativas {
-        border: 2px solid $color-cuaternario;   
-        border-radius: 15px;
-        overflow: hidden;
-        margin: 10px;
-        @extend %widith-clamp;
-        aspect-ratio: 4/2;
-        max-height: 600px;        
+    .home-principal {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .imagenes-representativas {
+            @extend %widith-clamp;
+            border: 2px solid $color-cuaternario;   
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px;           
+            max-height: 500px;
+        }
+        .home-logo-1927 {        
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            display: flex;
+            justify-content: center;
+            width: 60vw; 
+            
+            .cont-descripcion-logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                z-index: 1;
+                padding: 15px;
+                background: rgba(0, 0, 0, 0.14);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(4.9px);
+                -webkit-backdrop-filter: blur(4.9px);
+                border: 1px solid rgba(0, 0, 0, 0.3);                
+                min-width: 200px;
+                .cont-img-logo {
+                    width: 20vw; 
+                    max-width: 200px; 
+                    min-width: 90px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .titulo-logo {                                    
+                    width: 40vw;                     
+                    min-width: 135px;
+                    text-align: center;                                         
+                    h1 {
+                        font-size: 1.5rem;
+                    } 
+                }
+            }
+        }
     }
     .home-eventos {
         @extend %widith-clamp;
@@ -51,8 +98,12 @@
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
+                    padding-right: 15px;
                     gap: 10px;
-                    
+                    transition: transform 0.3s ease;
+                    &:hover {
+                        transform: scale(1.1)
+                    }                    
                 }
             }
         }      
@@ -123,11 +174,15 @@
                     transition: transform 0.5s ease;
                     .carousel-imagen {
                         min-width: 300px;
-                        height: 200px;
+                        height: 200px;                        
+                        }
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover; 
+                            transition: transform 0.3s ease;
+                            &:hover {
+                            transform: scale(1.1)
                         }
                     }
                 }
@@ -135,7 +190,11 @@
             
         }
         .menu-link-carta {
-            color: $color-terciario
+            color: $color-terciario;
+            transition: transform 0.3s ease;
+                &:hover {
+                    transform: scale(1.1)
+            }
         }
     }  
 }

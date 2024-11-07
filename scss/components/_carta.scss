@@ -29,6 +29,10 @@
                 gap: 5px;
                 margin: 10px;
                 width: clamp(300px, 50%, 420px);
+                transition: transform 0.2s ease;
+                    &:hover {
+                        transform: scale(1.1)
+                    }
                 h3 {
                     border-bottom: $color-principal solid 2px;                    
                     font-size: x-large;

@@ -13,10 +13,6 @@
             }
         }
     }
-
-
-
-
     footer {
         .cont-footer {
             display: grid;
@@ -73,6 +69,22 @@
 }
 
 @media screen and (max-width: 520px) {
+
+    .home {
+        .home-principal {
+            .home-logo-1927 {
+                .cont-descripcion-logo {
+                    .titulo-logo {
+                        h1 {
+                            font-size: 1.0rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
     footer {
         .cont-footer {
             display: grid;

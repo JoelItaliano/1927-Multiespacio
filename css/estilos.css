@@ -1,6 +1,6 @@
 /* Funcionalidades */
 /*Extends*/
-.home .imagenes-representativas, .home .home-eventos, .home .home-menu, .carta .productos-ofrecidos section, .eventos .cont-eventos, .galeria .contenedor-galeria, .sobre-nosotros .cont-sobreNosotros, footer .cont-footer {
+.home .home-principal .imagenes-representativas, .home .home-eventos, .home .home-menu, .carta .productos-ofrecidos section, .eventos .cont-eventos, .galeria .contenedor-galeria, .sobre-nosotros .cont-sobreNosotros, footer .cont-footer {
   width: clamp(300px, 100%, 1300px); }
 
 * {
@@ -80,13 +80,52 @@ header .barra-navegacion {
   flex-direction: column;
   gap: 30px;
   margin: 10px; }
-  .home .imagenes-representativas {
-    border: 2px solid #E5E5E5;
-    border-radius: 15px;
-    overflow: hidden;
-    margin: 10px;
-    aspect-ratio: 4/2;
-    max-height: 600px; }
+  .home .home-principal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .home .home-principal .imagenes-representativas {
+      border: 2px solid #E5E5E5;
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 10px;
+      max-height: 500px; }
+    .home .home-principal .home-logo-1927 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      width: 60vw; }
+      .home .home-principal .home-logo-1927 .cont-descripcion-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        z-index: 1;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.14);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.9px);
+        -webkit-backdrop-filter: blur(4.9px);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        min-width: 200px; }
+        .home .home-principal .home-logo-1927 .cont-descripcion-logo .cont-img-logo {
+          width: 20vw;
+          max-width: 200px;
+          min-width: 90px; }
+          .home .home-principal .home-logo-1927 .cont-descripcion-logo .cont-img-logo img {
+            width: 100%; }
+        .home .home-principal .home-logo-1927 .cont-descripcion-logo .titulo-logo {
+          width: 40vw;
+          min-width: 135px;
+          text-align: center; }
+          .home .home-principal .home-logo-1927 .cont-descripcion-logo .titulo-logo h1 {
+            font-size: 1.5rem; }
   .home .home-eventos {
     display: flex;
     align-items: center;
@@ -120,7 +159,11 @@ header .barra-navegacion {
           display: flex;
           align-items: center;
           justify-content: flex-end;
-          gap: 10px; }
+          padding-right: 15px;
+          gap: 10px;
+          transition: transform 0.3s ease; }
+          .home .home-eventos .home-contenedor-eventos .contenedor-descripcion-eventos .contenedor-link-eventos:hover {
+            transform: scale(1.1); }
   .home .home-menu {
     display: flex;
     flex-direction: column;
@@ -179,12 +222,18 @@ header .barra-navegacion {
           .home .home-menu .menu-carousel .cont-carousel .carousel-home .carousel-imagen {
             min-width: 300px;
             height: 200px; }
-            .home .home-menu .menu-carousel .cont-carousel .carousel-home .carousel-imagen img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover; }
+          .home .home-menu .menu-carousel .cont-carousel .carousel-home img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease; }
+            .home .home-menu .menu-carousel .cont-carousel .carousel-home img:hover {
+              transform: scale(1.1); }
     .home .home-menu .menu-link-carta {
-      color: #FCA311; }
+      color: #FCA311;
+      transition: transform 0.3s ease; }
+      .home .home-menu .menu-link-carta:hover {
+        transform: scale(1.1); }
 
 .carta .productos-ofrecidos {
   display: flex;
@@ -212,7 +261,10 @@ header .barra-navegacion {
       justify-content: space-between;
       gap: 5px;
       margin: 10px;
-      width: clamp(300px, 50%, 420px); }
+      width: clamp(300px, 50%, 420px);
+      transition: transform 0.2s ease; }
+      .carta .productos-ofrecidos section div:hover {
+        transform: scale(1.1); }
       .carta .productos-ofrecidos section div h3 {
         border-bottom: #000 solid 2px;
         font-size: x-large;
@@ -293,7 +345,10 @@ header .barra-navegacion {
       .galeria .contenedor-galeria section div {
         border: 1px solid #E5E5E5;
         width: 250px;
-        height: 200px; }
+        height: 200px;
+        transition: transform 0.2s ease; }
+        .galeria .contenedor-galeria section div:hover {
+          transform: scale(1.1); }
         .galeria .contenedor-galeria section div img {
           width: 100%;
           height: 100%; }
@@ -391,6 +446,8 @@ footer {
       width: 300px; } }
 
 @media screen and (max-width: 520px) {
+  .home .home-principal .home-logo-1927 .cont-descripcion-logo .titulo-logo h1 {
+    font-size: 1.0rem; }
   footer .cont-footer {
     display: grid;
     grid-template-columns: 1fr;
