@@ -40,14 +40,17 @@
 }
 
 @media screen and (max-width: 620px) {
-    header {
-        .contenedor-menu-hamburgesa {
-            display: inline;
+    
+        .menu-desplegable {
+            .contenedor-menu-hamburgesa {
+                display: inline;
+            }
+            .barra-navegacion {
+                display: none;
+            }
         }
-        .barra-navegacion {
-            display: none;
-        }
-    }
+        
+    
 
     .home {
         .imagenes-representativas {

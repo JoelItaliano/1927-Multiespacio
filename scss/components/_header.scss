@@ -7,60 +7,66 @@ header {
             padding: 20px;
         }
     }
-    .contenedor-menu-hamburgesa {        
+}
+    .menu-desplegable {
+        z-index: 10;
+        position: sticky;
+        top: 0;        
         background-color: $color-principal;
-        position: sticky;
-        top: 0;
-        display: none;
-        nav {
-            div {
-                div {
-                    ul {
-                        .nav-link {
-                            color: $color-secundario;
-                            opacity: 1;
-                            &:hover {
-                                color: $color-terciario !important;
-                            }
-                        }                    
-                    } 
-                }
-            } 
-        }  
-    }
-    .barra-navegacion {
-        margin: 10px;    
-        display: flex;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        div {
-            border-top: 1.5px solid $color-terciario;
-            border-bottom: 1.5px solid $color-terciario;
-            font-size: 1.1em;
-            font-weight: bold;    
-            width: 100%;
-            max-width: 1300px;
+        .contenedor-menu-hamburgesa {        
+            background-color: $color-principal;            
+            display: none;
             nav {
-                ul {
-                    list-style: none;
-                    display: flex;
-                    justify-content: space-evenly;  
-                    margin: 0;
-                    padding: 5px; 
-                    li {
-                        padding: 12.5px;
-                        a {
-                            &:hover {
-                                color: $color-terciario;
+                div {
+                    div {
+                        ul {
+                            .nav-link {
+                                color: $color-secundario;
+                                opacity: 1;
+                                &:hover {
+                                    color: $color-terciario !important;
+                                }
+                            }                    
+                        } 
+                    }
+                } 
+            }  
+        }
+        .barra-navegacion {
+            margin: 10px;    
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            div {
+                border-top: 1.5px solid $color-terciario;
+                border-bottom: 1.5px solid $color-terciario;
+                font-size: 1.1em;
+                font-weight: bold;    
+                width: 100%;
+                max-width: 1300px;
+                nav {
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-evenly;  
+                        margin: 0;
+                        padding: 5px; 
+                        li {
+                            padding: 12.5px;
+                            a {
+                                &:hover {
+                                    color: $color-terciario;
+                                }
                             }
                         }
                     }
-                }
-            } 
+                } 
+            }
         }
     }
-}
+    
+
 
 
 .contenedor-menu-hamburgesa nav div div ul .nav-link .active {
