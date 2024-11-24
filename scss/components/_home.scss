@@ -139,48 +139,15 @@
                     height: 100%;
                 }            
             }
-            .slick-arrow{
+            button{
                 position: absolute;
                 width: 45px;
                 height: 60px;
-                font-size: 1px;
-                color: transparent;
+                font-size: 1px;                
                 top: 50%;
                 transform: translateY(-50%);
-                z-index: 1;
-
-                background: rgba(255, 255, 255, 0.23);
-                border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(8.5px);
-                -webkit-backdrop-filter: blur(8.5px);
-                border: 1px solid rgba(255, 255, 255, 0.97);
-                cursor: pointer;
-            }
-            .slick-prev {
-                background: url(../../img/index/index-menu/icono-back.png) no-repeat right;
-                background-size: 90%;
-            }
-
-            .slick-next {
-                right: 5px;
-                background: url(../../img/index/index-menu/icono-next.png) no-repeat right;
-                background-size: 90%;
-            }
-        }
-        /*.menu-carousel {    
-            position: relative;
-            width: 100%;
-            max-width: 1300px;
-            min-width: 350px;
-            height: 200px;
-            overflow: hidden;
-            margin: 0 auto;
-            .carousel-button {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: rgba(255, 255, 255, 0.23);
+                z-index: 1;                
+                background-color: rgba(255, 255, 255, 0.23);
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(8.5px);
@@ -188,48 +155,17 @@
                 border: 1px solid rgba(255, 255, 255, 0.97);
                 cursor: pointer;
                 
-                width: 45px;
-                height: 60px;
-                z-index: 1;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
             }
-            .prev-button {
-                padding: 10px 5px;
-                left: 10px;
-            } 
-            .next-button {
-                padding: 10px 0 10px 10px;
-                right: 10px;
-            }           
-            .cont-carousel {
-                overflow: hidden;
-                width: 100%;
-                height: 100%;
-                .carousel-home {
-                    display: flex;
-                    gap: 10px;
-                    transition: transform 0.5s ease;
-                    .carousel-imagen {
-                        min-width: 300px;
-                        height: 200px;                        
-                        }
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover; 
-                            transition: transform 0.3s ease;
-                            &:hover {
-                            transform: scale(1.1)
-                        }
-                    }
-                }
+             .slick-prev {                
+                background: url("https://raw.githubusercontent.com/JoelItaliano/1927-Multiespacio/fd1211443f7c087fe738957a33603ec98156ab32/img/index/index-menu/icono-back.png") no-repeat right;
+                background-size: 90%;                
             }
-            
-        }*/
+           .slick-next {
+                right: 5px;
+                background: url("https://raw.githubusercontent.com/JoelItaliano/1927-Multiespacio/fd1211443f7c087fe738957a33603ec98156ab32/img/index/index-menu/icono-next.png") no-repeat right;
+                background-size: 90%;
+            }
+        }        
         .menu-link-carta {
             color: $color-terciario;
             transition: transform 0.3s ease;
